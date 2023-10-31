@@ -1,0 +1,59 @@
+@use "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+.contact {
+    @include flexCenter;
+
+    &__article1 {
+        width: 100%;
+        height: 27rem;
+        background: vars.$Blauw;
+        padding: 4rem;
+        box-shadow: 1rem 1.2rem 0.3rem vars.$Groen;
+    }
+
+    &__div {
+        @include flexCenter;
+    }
+
+    &__h3 {
+        font-size: 2rem;
+        color: vars.$Wit;
+    }
+
+    &__gegevens {
+        @include flexCenter;
+        padding-top: 4rem;
+        flex-direction: column;
+        color: vars.$Wit;
+        font-size: 2rem;
+    }
+
+    &__p1 {}
+
+    &__p2 {
+        padding: 2rem;
+    }
+
+    &__p3 {}
+
+    &__p4 {
+        padding: 2rem;
+    }
+
+    &__a {
+        color: vars.$Wit;
+    }
+
+    &__h1 {
+        @include flexCenter;
+        color: vars.$Groen;
+        padding-bottom: 2rem;
+        font-size: 3rem;
+    }
+}
+
+.contacth1 {
+    @include flexCenter;
+    @include contacth1;
+}

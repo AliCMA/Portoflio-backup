@@ -1,0 +1,21 @@
+@use "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+.beginpagina {
+    @include beginpagina;
+
+    &__h1 {
+        font-size: 3rem;
+        color: vars.$Wit;
+        padding: 5rem;
+    }
+
+    &__span {
+        font-size: 4rem;
+        color: vars.$Groen;
+    }
+
+    &__img {
+        border-radius: 8rem;
+    }
+}

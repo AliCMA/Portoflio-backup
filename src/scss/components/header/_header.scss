@@ -1,0 +1,80 @@
+@use "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+.header {
+    background-color: vars.$Blauw;
+    font-size: 1.75rem;
+
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 8rem;
+        padding: 0 2rem;
+        color: vars.$Groen;
+    }
+
+    &__logoList {
+        width: 10rem;
+        height: 5rem;
+        @include flexCenter;
+    }
+
+    &__logo {
+        width: 7rem;
+        height: 7rem;
+        object-fit: contain;
+        border-radius: 10rem;
+    }
+
+    &__ul {
+        @include flexCenter;
+        gap: 4rem;
+    }
+
+    &__li {
+        padding: 0.6rem;
+        position: relative;
+        &:hover {
+            color: vars.$Wit;
+        }
+    }
+
+    &__li::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.2rem;
+        left: 0;
+        bottom: 0;
+        background-color: vars.$Wit;
+        transform: scale(0, 1);
+        transform-origin: 50% 0%;
+        transition: transform 0.3s ease;
+    }
+
+    &__li:hover::after{
+        transform: scale(1, 1);
+    }
+
+    &__a {
+        color: vars.$Groen;
+
+    }
+
+    &__contact {
+        cursor: pointer;
+        border: 0.3rem solid vars.$Wit;
+        padding: 0.5rem;
+        
+        border-radius: 2rem;
+
+        &:hover {
+            transform: scale(1.2);
+            transition: 1s;
+            border: 0.1rem solid vars.$Wit;
+            padding: 0.5rem;
+        }
+    }
+}

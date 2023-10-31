@@ -1,0 +1,21 @@
+@use "./base.scss";
+// Abstracts
+@use "./abstracts/reset";
+@use "./abstracts/font";
+@use "./abstracts/mixins";
+@use "./abstracts/vars";
+@use "./abstracts/animatie";
+
+//Components
+@use "./components/header/header.scss";
+@use "./components/footer/footer.scss";
+@use "./components/main/home";
+@use "./components/main/projecten";
+@use "./components/main/contact";
+@use "./components/main/overmij";
+@use "./components/main/skills";
+@use "./components/main/top";
+
+
+// mediaqueries
+@use "./abstracts/mediaquerys";

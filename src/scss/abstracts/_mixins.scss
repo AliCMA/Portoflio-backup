@@ -1,0 +1,89 @@
+@use "../abstracts/vars";
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+;
+
+@mixin contacth1 {
+    font-size: 3rem;
+    color: vars.$Groen;
+    background: vars.$Blauw;
+    height: 10rem;
+    border: 0.5rem solid vars.$Groen;
+}
+
+;
+
+@mixin beginpagina {
+    background: vars.$Blauw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    min-height: 38rem;
+}
+
+;
+
+@mixin h1overmij {
+    font-size: 3rem;
+    color: vars.$Groen;
+    background: vars.$Blauw;
+    height: 10rem;
+    border: 0.5rem solid vars.$Groen;
+}
+
+;
+
+@mixin projecten {
+    display: flex;
+    flex-direction: column;
+    background: vars.$Blauw;
+    padding-top: 3rem;
+}
+
+;
+
+@mixin projectenh1 {
+    font-size: 3rem;
+    color: vars.$Groen;
+    background: vars.$Blauw;
+    height: 10rem;
+    border: 0.5rem solid vars.$Groen;
+};
+
+@mixin skills{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    height: 19rem;
+    background: vars.$Blauw;
+    box-shadow: 1rem 1.2rem 0.3rem vars.$Groen;
+    color: vars.$Groen;
+};
+
+@mixin h1skills{
+    font-size: 3rem;
+    color: vars.$Groen;
+    background: vars.$Blauw;
+    height: 10rem;
+    border: 0.5rem solid vars.$Groen;
+};
+
+@mixin top{
+    width: 4rem;
+    height: 4rem;
+    bottom: 11rem;
+    right: 6rem;
+    border: none;
+    border-radius: 0.3125rem;
+    font-size: 450%;
+    position: fixed;
+    text-decoration: none;
+    color: white;
+    background: #222831;
+};

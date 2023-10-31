@@ -1,0 +1,446 @@
+@media (max-width: 1050px) {
+  .beginpagina {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .beginpagina__article2 {
+    color: red;
+  }
+
+  body {
+    font-size: 100%;
+  }
+
+  .header__nav {
+    height: 10rem;
+  }
+
+  .header__logoList {
+    width: 6rem;
+    height: 3rem;
+  }
+
+  .header__logo {
+    width: 6rem;
+    height: 6rem;
+    padding-right: 0.5rem;
+  }
+
+  .header__ul {
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .beginpagina__h1 {
+    font-size: 2rem;
+    padding: 3rem;
+  }
+
+  .beginpagina__span {
+    font-size: 3rem;
+  }
+
+  .projecten__article1 {
+    padding: 1rem;
+  }
+
+  .projecten__h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .projecten__fotos {
+    width: 100%;
+  }
+
+  .projecten__a {
+    font-size: 2rem;
+  }
+
+  .projecten__buttondiv {
+    height: 2rem;
+    padding: 1rem;
+  }
+
+  .projecten__btna {
+    font-size: 1.4rem;
+  }
+
+  .project__wrapper {
+    height: 20rem;
+  }
+
+  .project__beschrijving {
+    max-width: 24rem;
+  }
+
+  .project__beschrijving--sub-title,
+  .project__beschrijving--para,
+  .project__beschrijving--link {
+    font-size: 1.4rem;
+  }
+
+  .contact__article1 {
+    height: 20rem;
+    padding: 2rem;
+  }
+
+  .contact__h3 {
+    font-size: 1.6rem;
+  }
+
+  .contact__gegevens {
+    padding-top: 2rem;
+  }
+
+  .contact__p2 {
+    font-size: 1.3rem;
+  }
+
+  .contact__p2,
+  .contact__p4 {
+    padding: 1rem;
+  }
+
+  .contact__a {
+    font-size: 1.4rem;
+  }
+
+  .contact__h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .top {
+    width: 3rem;
+    height: 3rem;
+    bottom: 7rem;
+    right: 4rem;
+  }
+
+  .topb{
+    height: 3rem;
+  }
+
+  .overmij__article1 {
+    height: 24rem;
+    padding: 2rem;
+  }
+
+  .overmij__img {
+    width: 30rem;
+    padding: 1rem;
+  }
+
+  .h1overmij {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .skills,
+  .skills2 {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .skills__p,
+  .skills2__p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .h1skills {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .project__img {
+    height: 100%;
+    // width: 62rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .overmij__article1{
+    height: 20rem;
+  }
+
+  .beginpagina__img {
+    width: 100%;
+  }
+
+  .header__li:hover {
+    transform: none;
+    transition: none;
+    padding: none;
+    border: none;
+  }
+
+  .header__contact:hover {
+    transform: none;
+    transition: none;
+    padding: none;
+  }
+
+  .projecten__kaartjes {
+    gap: 1rem;
+  }
+
+  .projecten__fotos {
+    height: 21rem;
+  }
+
+  .project {
+    height: 21rem;
+    margin-bottom: none;
+  }
+
+  .project__wrapper::before {
+    height: 20rem;
+  }
+
+  .project__beschrijving {
+    position: absolute;
+    top: 50%;
+    left: 2.5rem;
+    transform: translateY(100%);
+    max-width: 34.375rem;
+    z-index: 3;
+    opacity: 0;
+    transition: transform 450ms, opacity 300ms;
+  }
+
+  .project__beschrijving--title {
+    font-size: 2.5rem;
+    color: green;
+  }
+
+  .project__beschrijving--para {
+    margin: 1rem 0;
+  }
+
+  .project__beschrijving--link {
+    font-size: 1.25rem;
+    margin-right: 1rem;
+  }
+
+  .project__beschrijving--title {
+    text-align: left;
+    color: #CCFFBD;
+    font-size: 1.6rem;
+  }
+
+  .project__beschrijving--sub-title,
+  .project__beschrijving--para,
+  .project__beschrijving--link {
+    text-align: left;
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  .project__img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .projecten__kaartjes {
+    gap: 8rem;
+  }
+
+  .projecten__fotos {
+    height: 13rem;
+  }
+
+  .project {
+    height: 13rem;
+    margin-bottom: none;
+  }
+
+  .project__wrapper::before {
+    height: 20rem;
+  }
+
+  .project__beschrijving {
+    position: absolute;
+    top: 30%;
+    transform: translateY(100%);
+    max-width: 34.375rem;
+    z-index: 3;
+    opacity: 0;
+    transition: transform 450ms, opacity 300ms;
+  }
+
+  .project__beschrijving--para {
+    margin: 1rem 0;
+  }
+
+  .project__beschrijving--link {
+    margin-right: 1rem;
+  }
+
+  .project__beschrijving--title {
+    text-align: left;
+    color: #CCFFBD;
+    font-size: 1rem;
+  }
+
+  .project__beschrijving--sub-title,
+  .project__beschrijving--para,
+  .project__beschrijving--links {
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+  }
+
+  .projecten__a {
+    text-align: left;
+    color: #CCFFBD;
+    font-size: 1.6rem;
+  }
+
+  .project__img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 585px) {
+  .skills,
+  .skills2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1050px){
+  .overmij{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+// @media (max-width: 1247px){
+//   .overmij__article1{
+//     height: 63rem;
+//   }
+// }
+
+@media (max-width: 1049px){
+  .overmij__article1{
+    height: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 1058px){
+
+}
+
+@media (max-width: 658px){
+  .overmij__article1{
+    height: 40rem;
+  }
+}
+
+@media (max-width: 579px){
+  .overmij__article1{
+    height: 65rem;
+  }
+}
+
+@media (max-width: 475px){
+  .header{
+    height: 13rem;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 426px){
+  .overmij__img{
+    padding: 3.5rem;
+  }
+}
+
+@media (max-width: 579px){
+  .overmij__article1{
+    height: 40rem;
+  }
+}
+
+@media (max-width: 563px){
+  .overmij__article1{
+    height: 45rem;
+  }
+}
+
+
+@media (max-width: 486px){
+  .overmij__article1{
+    height: 60rem;
+  }
+}
+
+@media (max-width: 402px){
+  .overmij__article1{
+    height: 65rem;
+  }
+}
+
+
+@media (max-width: 398px){
+  .overmij__article1{
+    height: 66rem;
+  }
+}
+
+@media (max-width: 390px){
+  .overmij__article1{
+    height: 70rem;
+  }
+}
+
+
+
+@media (max-width: 380px){
+  .overmij__article1{
+    height: 68rem;
+  }
+}
+
+@media (max-width: 378px){
+  .overmij__article1{
+    height: 75rem;
+  }
+}
+
+@media (max-width: 366px){
+  .overmij__article1{
+    height: 80rem;
+  }
+}
+
+@media (max-width: 364px){
+  .overmij__article1{
+    height: 90rem;
+  }
+}
+
+@media (max-width: 325px){
+  .overmij__article1{
+    height: 110rem;
+  }
+}
+
+@media (max-width: 475px){
+
+  .header{
+    height: 14rem;
+  }
+
+  .header__ul{
+    padding-top: 1rem;
+  }
+}
+

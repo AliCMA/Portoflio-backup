@@ -1,0 +1,49 @@
+@use "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+.overmij {
+    @include flexCenter;
+
+
+    &__article1 {
+        width: 100%;
+        min-height: 32rem;
+        background: vars.$Blauw;
+        padding: 4rem;
+        box-shadow: 1rem 1.2rem 0.3rem vars.$Groen;
+    }
+
+    &__p {
+        font-size: 1.6rem;
+        color: vars.$Wit;
+        padding: 2rem;
+    }
+
+    &__cvdiv{
+        @include flexCenter;       
+    }
+
+    &__cva{
+        max-width: 2rem;
+    }
+    
+    &__btnc{
+        background: vars.$Blauw;
+        padding: 0.5rem;
+        cursor: pointer;
+        color: vars.$Wit;
+        border: 0.2rem solid vars.$Wit;
+    }
+
+
+    &__img {
+        width: 38rem;
+        padding: 2rem;
+    }
+}
+
+
+.h1overmij {
+    @include flexCenter;
+    @include h1overmij;
+}

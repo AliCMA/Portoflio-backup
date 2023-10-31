@@ -1,0 +1,176 @@
+@use "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+.projecten {
+  @include projecten;
+
+  &__buttonuitleg{
+    cursor: pointer;
+    border: none;
+    padding: 0.2rem;
+    color: vars.$Zwart;
+    background: vars.$Groen;
+  }
+
+  &__article1 {
+    @include flexCenter;
+  }
+
+  &__h1 {
+    color: vars.$Groen;
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &__kaartjes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__fotos {
+    width: 45rem;
+  }
+
+  &__a {
+    font-size: 3.2rem;
+    color: vars.$Groen;
+  }
+
+  &__button {
+    @include flexCenter;
+    padding-bottom: 2rem;
+    padding-top: 8rem;
+  }
+
+  &__buttondiv {
+    background: white;
+    height: 2.5rem;
+    @include flexCenter;
+    padding: 2rem;
+    border: 0.4rem solid vars.$Groen;
+
+    &:hover {
+      transition: 1.8s;
+      background: vars.$Groen;
+    }
+  }
+
+  &__ul {
+    color: white;
+
+  }
+
+  &__li {
+    color: vars.$Zwart;
+  }
+
+  &__btna {
+    font-size: 1.6rem;
+    color: vars.$Blauw;
+
+    &:hover {
+      color: vars.$Blauw;
+    }
+
+  }
+
+}
+
+.project {
+  margin-bottom: 8.43rem;
+
+  &:last-child {
+    margin-bottom: 2.5rem;
+  }
+
+
+  &__img {
+    width: 100%;
+    transition: all 500ms ease;
+  }
+
+  &__wrapper {
+    display: flex;
+    box-shadow: 0 1.25rem 5rem rgba(0, 0, 0, 0.45);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    position: relative;
+    height: 25rem;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #1c1d25;
+      opacity: 0;
+      transition: all 450ms ease;
+      z-index: 2;
+      transform: translateY(100%);
+    }
+
+    &:hover:before {
+      transform: translateY(0);
+      opacity: 0.7;
+    }
+  }
+
+  &:hover .project__img {
+    transform: scale(1.07);
+    filter: blur(0.3125rem);
+  }
+
+  &:hover .project__beschrijving {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+
+  &__list {
+    padding-top: 2.5rem;
+  }
+
+  &__beschrijving {
+    position: absolute;
+    top: 50%;
+    left: 5.625rem;
+    transform: translateY(100%);
+    max-width: 34.375rem;
+    z-index: 3;
+    opacity: 0;
+    transition: transform 450ms, opacity 300ms;
+  }
+
+  &__beschrijving--title {
+    font-size: 2.5rem;
+  }
+
+  &__beschrijving--para {
+    margin: 1rem 0;
+  }
+
+  &__beschrijving--link {
+    font-size: 1.25rem;
+    margin-right: 1rem;
+  }
+
+
+  &__beschrijving--title,
+  &__beschrijving--sub-title,
+  &__beschrijving--para,
+  &__beschrijving--link {
+    text-align: left;
+    color: vars.$Wit;
+    font-size: 1.6rem;
+  }
+
+  
+}
+
+.projectenh1 {
+  @include flexCenter;
+  @include projectenh1;
+}

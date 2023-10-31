@@ -1,0 +1,73 @@
+@use "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+
+
+.skills{
+    @include flexCenter;
+    @include skills;
+
+    &__article1{
+        justify-content: space-around;
+        display: flex;
+    }
+
+    &__p{
+        padding-top: 1rem;
+        padding-bottom: 1rem;   
+    }
+    
+}
+
+.skills2{
+    @include flexCenter;
+    @include skills;
+
+    &__article1{
+        justify-content: space-around;
+        display: flex;
+    }
+
+    &__p{
+        padding-top: 1rem;
+        padding-bottom: 1rem;   
+    }  
+}
+
+.h1skills{
+    @include flexCenter;
+    @include h1skills;
+}
+
+.fa-html5{
+    color: vars.$html;
+}
+
+.fa-css3-alt{
+    color: vars.$css;
+}
+
+.fa-js{
+    color: vars.$js;
+}
+
+.fa-php{
+    color: vars.$php;
+}
+
+.fa-sass{
+    color: vars.$scss;
+}
+
+.fa-react{
+    color: vars.$react;
+}
+
+.fa-python{
+    color: vars.$python;
+}
+
+.fa-wordpress{
+    color: vars.$wordpress;
+}
+

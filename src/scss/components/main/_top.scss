@@ -1,0 +1,44 @@
+@use "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+// .top{
+//     @include flexCenter;
+//     position: fixed;
+//     width: 5rem;
+//     height: 5rem;
+//     right: 5rem;
+//     bottom: 9rem;
+//     border: none;
+//     border-radius: 0.8rem;
+//     overflow: hidden;
+//     font-size: 150%;
+//     text-decoration: none;
+//     color: vars.$Wit;
+//     background: vars.$Zwart;
+//     font-size: 1.6rem;
+// }
+
+.top {
+    @include flexCenter;
+    position: fixed;
+    width: 5rem;
+    height: 5rem;
+    right: 5rem;
+    bottom: 9rem;
+    border: none;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    font-size: 150%;
+    text-decoration: none;
+    color: vars.$Wit;
+    background: vars.$Zwart;
+    font-size: 1.6rem;
+    display: none; 
+}
+
+.topb{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+}

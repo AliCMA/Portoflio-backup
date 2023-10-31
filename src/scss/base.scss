@@ -1,0 +1,28 @@
+@use "./abstracts/vars";
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    text-decoration: none;
+    a { color: inherit; } 
+}
+
+
+body{
+    font-size: 62.5%;
+    background: vars.$Background;
+}
+
+main{
+    min-height: 80vh;
+    padding-top: 4rem;
+    padding: 2rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: vars.$Background;
+
+}
